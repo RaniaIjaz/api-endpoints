@@ -1,0 +1,32 @@
+<!-- res/layout/activity_display_user.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Username TextView -->
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textSize="18sp"/>
+
+    <!-- Email TextView -->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"/>
+
+    <!-- Error message TextView -->
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"/>
+</LinearLayout>
