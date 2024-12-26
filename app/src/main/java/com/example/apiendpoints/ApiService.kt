@@ -21,9 +21,9 @@ interface ApiService {
     @POST("forgot_password.php")
     fun forgotPassword(@Body request: ForgotPasswordRequest): Call<Map<String, String>>
 
+    @GET("display_users.php")
+    fun getUserData(@HeaderMap headers: Map<String, String>): Call<Map<String, Any>>
 
-    @GET("display_users.php") // Replace with your actual endpoint
-    fun getUserDetails(@HeaderMap headers: Map<String, String>): Call<Map<String, Any>>
 }
 
 
